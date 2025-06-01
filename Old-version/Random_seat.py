@@ -44,6 +44,6 @@ def Show_seat_available():
         difference = set(seat_position).difference(set(seat_unavailable[Zone]))
         sort = sorted(difference, key=lambda x: (x[0], int(''.join(filter(str.isdigit, x)))))
         seat_result[Zone] = sort
-    return seat_result
+    return seat_result  
 
 
